@@ -33,18 +33,24 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
-    /> 
+    />
 
     <link
       href="https://fonts.googleapis.com/css?family=Cookie"
       rel="stylesheet"
       type="text/css"
     />
-   
-    <script src="https://kit.fontawesome.com/38d2d30f05.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
+    <!--Navbar Starts here-->
     <header class="container-fluid px-0">
       <div class="text-center">
         <img src="images/Alternate Logo 1.png" width="180rem" />
@@ -71,7 +77,7 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="nav-link active" aria-current="page" href="index.html"
                   >About Us</a
                 >
               </li>
@@ -89,6 +95,9 @@
         </div>
       </nav>
     </header>
+    <!--Navbar ends here-->
+
+    <!--First content starts-->
     <div class="container-fluid p-0">
       <div class="row">
         <div class="col-6 p-0">
@@ -116,11 +125,18 @@
           </div>
         </div>
       </div>
-      <h1 class="text-center pt-serif-bold m-3">About Us</h1>
-      <div
-        class="background"
-        style="background-image: url(images/bp.jpg)"
-      ></div>
+
+      <!--First content ends-->
+
+      <div class="background" style="background-image: url(images/bp.jpg)">
+        <div
+          class="parallax-text black-ops-one-regular bg1 text-center"
+          style="color: white"
+        >
+          <h1 class="lineUp pt-serif-bold m-3">Learn All About Us!</h1>
+        </div>
+      </div>
+
       <div class="container py-4 open-sans-ragular">
         <h5 class="text-center fw-bold lh-lg">
           <u class="fw-bolder">Our Story:</u> Little Bird Toys, established in
@@ -144,20 +160,24 @@
           the US economy.
         </h5>
       </div>
-      <div class="text-center py-5">
-        <button class="buttona">
-          Explore Our Products
-          <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
-            <path
-              clip-rule="evenodd"
-              d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
-              fill-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
-      </div>
+      <a href="store.html">
+        <div class="text-center py-5">
+          <button class="buttona">
+            Explore Our Products
+            <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+              <path
+                clip-rule="evenodd"
+                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </a>
     </div>
 
+
+    <!--Footer starts-->
     <footer class="footer-distributed">
       <div class="footer-left">
         <img src="images/Main Logo.png" width="20%" />
@@ -187,26 +207,42 @@
         </div>
 
         <div>
-          <i class="fa "></i>
-          <p></p>
+          <i class="fa-solid fa-calendar-days"></i>
+          <p class="fw-bolder">Store Hours:</p>
+          <ul style="color: white">
+            <li>Saturday: 10:00 AM to 2:00 PM</li>
+            <li>Weekdays: 7:00 AM to 4:30 PM</li>
+          </ul>
         </div>
       </div>
 
       <div class="footer-right">
         <p class="footer-company-about">
-          <span>About the company</span>
-          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce
-          euismod convallis velit, eu auctor lacus vehicula sit amet.
+          <span class="fw-bolder">About the company</span>
+          The Little Bird Toy Company is a small, family-owned business
+          specializing in handcrafted wooden toys for children. Based in a
+          charming small town, the siblings behind the company, Evan, Abigail,
+          and Elizabeth, have been creating unique and heirloom-quality toys for
+          the past three years.
         </p>
 
         <div class="footer-icons">
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-linkedin"></i></a>
-          <a href="#"><i class="fa fa-github"></i></a>
+          <a href="https://www.facebook.com/LittleBirdToyCo"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/LittleBirdToyCo"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://twitter.com/LittleBirdToys"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+          <a href="https://www.snapchat.com/LittleBirdToys"
+            ><i class="fa-brands fa-snapchat"></i
+          ></a>
         </div>
       </div>
     </footer>
+    <!--Footer Ends here-->
 
     <!-- Bootstrap JavaScript Libraries -->
     <script

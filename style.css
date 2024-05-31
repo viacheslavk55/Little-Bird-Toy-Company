@@ -332,4 +332,30 @@ a.a1:hover{
     }
   
   }
-  
+  .lineUp {
+    animation: 7s anim-lineUp ease-out 1;
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  .parallax-text {
+    position: relative;
+    top: 50%;
+    letter-spacing: 10px;
+    opacity: 0.8;
+    white-space: nowrap;
+  }
