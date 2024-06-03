@@ -81,7 +81,8 @@ body {
 a.a1{
   display: block;
   font-size: 14px;
-  font-family: sans-serif;
+  font: open-sans-ragular;
+  font-weight: 900;
   text-decoration: none;
   color: #333;
   border-top: 2px solid #333;
@@ -89,13 +90,18 @@ a.a1{
   padding: 10px;
   letter-spacing: 2px;
   transition: all 1s;
+  background-color: #c8e5e8;
 }
 
 a.a1:hover{
   letter-spacing: 5px;
+  background-color: white;
 }
+
   /*card hover end*/ 
-  
+  .card-title {
+    font-weight: 900;
+  }
   .buttona {
     transition: all 0.3s ease-in-out;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
@@ -358,4 +364,27 @@ a.a1:hover{
     letter-spacing: 10px;
     opacity: 0.8;
     white-space: nowrap;
+  }
+  /* carousel */ 
+  .carousel-item{ 
+    height: 40%;
+    width: 40%; 
+  }
+
+  /* product page */ 
+  h3 { 
+    padding: 15px; 
+    text-align: center;
+  }
+  p { 
+    padding: 15px; 
+    text-align: center;
+  }
+  .col-6{ 
+    margin: auto; 
+    width: 50%; 
+  }
+  .card-price {
+    text-align: center;
+    font-weight: 900;
   }
