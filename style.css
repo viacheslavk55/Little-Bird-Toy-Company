@@ -15,10 +15,6 @@ body,html{
     font-weight: 600;
     font-style: normal;
   }
-  .carousel-item img{ 
-    height: 50vh; 
-    width: 50vh;
-  }
   .open-sans-ragular {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
@@ -340,6 +336,7 @@ a.a1:hover{
   }
   .lineUp {
     animation: 7s anim-lineUp ease-out 1;
+    font-size: calc(1.2rem + 1vw);
   }
   @keyframes anim-lineUp {
     0% {
@@ -357,6 +354,9 @@ a.a1:hover{
       opacity: 1;
       transform: translateY(0%);
     }
+  }
+  .sizef {
+    font-size: calc(0.6rem + 0.6vw);
   }
   .parallax-text {
     position: relative;
@@ -376,10 +376,6 @@ a.a1:hover{
     padding: 15px; 
     text-align: center;
   }
-  p { 
-    padding: 15px; 
-    text-align: center;
-  }
   .col-6{ 
     margin: auto; 
     width: 50%; 
@@ -387,4 +383,14 @@ a.a1:hover{
   .card-price {
     text-align: center;
     font-weight: 900;
+  }
+  h3.description { 
+    font-family: "Open Sans", sans-serif;
+    font-weight: 990;
+  }
+  .product-title h1 { 
+    font-family: "Open Sans", sans-serif;
+    font-weight: 990;
+    text-align: center; 
+    padding-top: 20px;
   }

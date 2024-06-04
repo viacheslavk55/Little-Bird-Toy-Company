@@ -1,2 +1,10 @@
-
+const products = [
+    {
+        name: "Wooden Block Set",
+        img: ["images/block1.png", "images/block2.png", "images/block3.png", "images/block4.png", "images/block5.png"],
+        price: "$29.99",
+        description: "Unleash boundless creativity and ignite imaginative play with our premium 72-piece block set! Crafted from finely polished hardwood, each block is meticulously designed to inspire endless building possibilities. From towering castles to intricate cityscapes, budding architects can bring their dreams to life with ease. Enclosed in a sleek wooden storage crate, measuring 13” L x 12” W x 2” H, organization is effortless, ensuring every block finds its place after playtime. Whether constructing grand structures or exploring simple shapes, this set fosters cognitive development while providing hours of engaging entertainment. Invest in quality, invest in imagination. Elevate playtime with our deluxe block set, where every piece is a gateway to limitless creativity!",
+        reviews: ["Sarah M: \"Absolutely love this block set! As a parent, I'm always looking for toys that encourage my child's creativity, and this set exceeded my expectations. The blocks are beautifully crafted and feel great to the touch. Plus, the storage crate is a game-changer for keeping things tidy. Highly recommend!\"", "David R: \"My kids can't get enough of these blocks! It's amazing to see how they've taken to building and creating their own little worlds. The quality is top-notch, and I appreciate that they're made from natural materials. A fantastic investment for any family looking to foster imagination and fine motor skills.\"", "Ms. Johnson, Elementary School Teacher: \"I bought this block set for my classroom, and it's been a hit with the kids! They love building and experimenting with different designs. The blocks are sturdy and well-made, perfect for withstanding the rigors of daily use. The storage crate is a bonus, helping us keep our classroom organized. Highly recommended for educators!\"", "Emily H: \"This block set is a game-changer for playdates! My child and their friends spend hours constructing everything from forts to race tracks. The blocks are smooth and easy to manipulate, even for little hands. The wooden crate makes cleanup a breeze, and I love that everything has its place. 5 stars all the way!\""]
+    },
+]
   
