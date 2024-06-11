@@ -459,7 +459,26 @@ a.a1:hover{
   iframe{ 
     float: right; 
     margin-right: 10%;
+    padding: 10px; 
   }
+  .hours { 
+    font-family: "Open Sans", sans-serif;
+  }
+h4 { 
+  font-family: "Open Sans", sans-serif;
+  padding: 20px; 
+}
+h5{ 
+  padding: 20px; 
+  text-align: center; 
+}
+  /*end of location page */ 
+
+  /* contact page */ 
+  .contacts li { 
+    padding: 5px; 
+  }
+  /* end of contact page */ 
   .button3 {
     position: relative;
     display: inline-block;
