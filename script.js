@@ -1,31 +1,94 @@
 const products = [
     {
         name: "Wooden Block Set",
-        img: ["images/block1.png", "images/block2.png", "images/block3.png", "images/block4.png", "images/block5.png"],
+        imageSrc: "images/block2.png",
+        description: "Build creativity and imagination with this high-quality, 72-piece block set. Made from naturally finished and smooth-sanded hardwood blocks, this set comes in a convenient wooden storage crate <br> Age 3+ <br> Size: 13” L x 12” W x 2” H.",
         price: "$29.99",
-        description: "Unleash creativity with our premium 72-piece block set, crafted from finely polished hardwood to inspire endless building possibilities. Enclosed in a sleek wooden storage crate, measuring 13” L x 12” W x 2” H, it ensures effortless organization after playtime. This deluxe block set fosters cognitive development and provides hours of engaging entertainment, making it a perfect investment in quality and imagination.",
-        reviews: ["Sarah M: \"Absolutely love this block set! As a parent, I'm always looking for toys that encourage my child's creativity, and this set exceeded my expectations. The blocks are beautifully crafted and feel great to the touch. Plus, the storage crate is a game-changer for keeping things tidy. Highly recommend!\"", "David R: \"My kids can't get enough of these blocks! It's amazing to see how they've taken to building and creating their own little worlds. The quality is top-notch, and I appreciate that they're made from natural materials. A fantastic investment for any family looking to foster imagination and fine motor skills.\"", "Ms. Johnson, Elementary School Teacher: \"I bought this block set for my classroom, and it's been a hit with the kids! They love building and experimenting with different designs. The blocks are sturdy and well-made, perfect for withstanding the rigors of daily use. The storage crate is a bonus, helping us keep our classroom organized. Highly recommended for educators!\"", "Emily H: \"This block set is a game-changer for playdates! My child and their friends spend hours constructing everything from forts to race tracks. The blocks are smooth and easy to manipulate, even for little hands. The wooden crate makes cleanup a breeze, and I love that everything has its place. 5 stars all the way!\""]
+        onClickFunction: "blocks()"
     },
-]
+    {
+        name: "Wooden Boat",
+        imageSrc: "images/boat2.png",
+        description: "Set sail for bathtub adventures with this adorable wooden boat. Made from solid Maine white pine, this handcrafted toy floats and features rounded edges for safety. Includes two peg 'lobster people.' <br> For all ages <br> Size: 10.5' L x 4.5' W x 3.5' H.",
+        price: "$14.99",
+        onClickFunction: "boat()"
+    },
+    {
+        name: "Wooden Car",
+        imageSrc: "images/car1.png",
+        description: "This heirloom-quality wooden car is a timeless treasure. Handcrafted from domestic and exotic hardwoods with a clear lacquer finish, this unique car will inspire generations of imaginative play. <br> Age: Toddlers <br> Size: 12' L x 5' H x 3.5' W",
+        price: "$19.99",
+        onClickFunction: "car()"
+    },
+    {
+        name: "Wooden Plane",
+        imageSrc: "images/plane1.png",
+        description: "Soar through imaginative skies with this classic wooden airplane. Handcrafted from sustainable Baltic birch wood with a safe, natural harvest finish and a spinning propeller. <br> Age: Toddlers <br> Size: 3.5'H x 7'L x 7'W.",
+        price: "$19.99",
+        onClickFunction: "plane()"
+    },
+    {
+        name: "Train",
+        imageSrc: "images/train1.png",
+        description: "Embark on a charming journey with this beautiful handcrafted wooden train set. The train and three interchangeable carts display intricate details made from real beech wood.<br> Age: 3+ <br> Size 11'H x 84'L x 13'W",
+        price: "$24.99",
+        onClickFunction: "train()"
+    },
+    {
+        name: "Duck",
+        imageSrc: "images/duck1.png",
+        description: "A charming and eco-friendly wooden duck toy, crafted from natural, non-toxic materials, perfect for sparking imaginative play and encouraging fine motor skills in young children.<br> Age: Toddlers <br> Size 20'H x 50'L x 10'W",
+        price: "$19.99",
+        onClickFunction: "duck()"
+    }
+];
+
+function generateProductHTML(product) {
+    return `
+        <div class="col">
+            <div class="card h-100" style="border:5px solid #c8e5e8">
+                <img src="${product.imageSrc}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">${product.name}</h5>
+                    <p class="card-text">${product.description}</p>
+                    <h4 class="card-price">${product.price}</h4>
+                    <a onclick="${product.onClickFunction}" class="btn btn a1">Add to cart</a>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function generateProducts() {
+    const productContainer = document.getElementById("productContainer");
+    products.forEach(product => {
+        productContainer.innerHTML += generateProductHTML(product);
+    });
+}
+
+generateProducts();
+
+
 function goBack() {
     window.location.href = "store.html"
 }
-const headTitle = document.getElementById('title1')
-const bodyTitle = document.getElementById('title2')
-const img1 = document.getElementById('carouselImg1')
-const img2 = document.getElementById('carouselImg2')
-const img3 = document.getElementById('carouselImg3')
-const img4 = document.getElementById('carouselImg4')
-const img5 = document.getElementById('carouselImg5')
-const desc = document.getElementById('description')
-const review1 = document.getElementById('review1')
-const review2 = document.getElementById('review2')
-const review3 = document.getElementById('review3')
-const review4 = document.getElementById('review4')
 
 
 function blocks() {
-    window.location.href = "shop.html"
-    const titleInsert = `<h1>${products[0].name}</h1>`
-    bodyTitle.innerHTML += titleInsert
+    window.location.href = "blocks.html"
+}
+function boat() {
+    window.location.href = "boat.html"
+}
+function car() {
+    window.location.href = "car.html"
+}
+function duck() {
+    window.location.href = "duck.html"
+}
+function train() {
+    window.location.href = "train.html"
+}
+function plane() {
+    window.location.href = "plane.html"
 }
