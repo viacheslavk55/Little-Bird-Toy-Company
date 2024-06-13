@@ -92,3 +92,4 @@ function train() {
 function plane() {
     window.location.href = "plane.html"
 }
+

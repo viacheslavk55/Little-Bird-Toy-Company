@@ -201,7 +201,8 @@
                   Choo-choo! All aboard for hours of imaginative play with our charming wooden train set, measuring 11'H x 84'L x 13'W. Crafted from durable, eco-friendly wood and painted with vibrant, non-toxic colors, this train is perfect for little hands and creative minds. Watch as children construct their own railroads and embark on countless adventures, fostering fine motor skills and storytelling abilities.
                 </p>
                 <div class="text-center">
-                  <button type="button" class="button2 mx-auto">
+                  <button type="button" class="button2 mx-auto" id="addCart"
+                  onclick="addCart()">
                     <span class="button__text">Add to Cart</span>
                     <span class="button__icon"
                       ><svg
@@ -220,10 +221,46 @@
                         <line y2="12" y1="12" x2="19" x1="5"></line></svg>
                     </span>
                   </button>
+                  <div id="popupOverlay"></div>
+                <div id="popupMessage">
+                  <p>Successfully added to cart! <i class="fa-solid fa-thumbs-up"></i></p>
+                  <button type="button" id="closePopup" class="btn btn-outline-dark">close</button>
+                </div>
                 </div>
               </div>
             </div>
 
+
+            <script>
+              document.addEventListener('DOMContentLoaded', function() {
+              // Select the button using its ID
+              const addCartButton = document.getElementById('addCart');
+              const popupMessage = document.getElementById('popupMessage');
+              const popupOverlay = document.getElementById('popupOverlay');
+              const closePopup = document.getElementById('closePopup');
+  
+              // Attach the click event listener to the "Add to Cart" button
+              addCartButton.addEventListener('click', function() {
+                  // Display the popup message and overlay
+                  popupMessage.style.display = 'block';
+                  popupOverlay.style.display = 'block';
+              });
+  
+              // Attach the click event listener to the "Close" button
+              closePopup.addEventListener('click', function() {
+                  // Hide the popup message and overlay
+                  popupMessage.style.display = 'none';
+                  popupOverlay.style.display = 'none';
+              });
+  
+              // Attach the click event listener to the overlay to close the popup when clicking outside the message
+              popupOverlay.addEventListener('click', function() {
+                  // Hide the popup message and overlay
+                  popupMessage.style.display = 'none';
+                  popupOverlay.style.display = 'none';
+              });
+          });
+            </script>
             <!-- reviews -->
             <div class="col-12">
               <h3 class="description">Reviews</h3>

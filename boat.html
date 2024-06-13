@@ -201,7 +201,8 @@
                   Introduce your child to the wonders of the sea with our exquisitely crafted wooden boat toy, measuring 10.5' L x 4.5' W x 3.5' H. Made from high-quality, polished hardwood, this charming boat features vibrant colors and smooth edges, ensuring safe and imaginative play. Perfect for bath time or outdoor adventures, it inspires creativity and storytelling, making it an ideal addition to any young sailor's toy collection.
                 </p>
                 <div class="text-center">
-                  <button type="button" class="button2 mx-auto">
+                  <button type="button" class="button2 mx-auto" id="addCart"
+                  onclick="addCart()">
                     <span class="button__text">Add to Cart</span>
                     <span class="button__icon"
                       ><svg
@@ -220,10 +221,46 @@
                         <line y2="12" y1="12" x2="19" x1="5"></line></svg>
                     </span>
                   </button>
+                  <div id="popupOverlay"></div>
+                <div id="popupMessage">
+                  <p>Successfully added to cart! <i class="fa-solid fa-thumbs-up"></i></p>
+                  <button type="button" id="closePopup" class="btn btn-outline-dark">close</button>
+                </div>
                 </div>
               </div>
             </div>
 
+
+            <script>
+              document.addEventListener('DOMContentLoaded', function() {
+              // Select the button using its ID
+              const addCartButton = document.getElementById('addCart');
+              const popupMessage = document.getElementById('popupMessage');
+              const popupOverlay = document.getElementById('popupOverlay');
+              const closePopup = document.getElementById('closePopup');
+  
+              // Attach the click event listener to the "Add to Cart" button
+              addCartButton.addEventListener('click', function() {
+                  // Display the popup message and overlay
+                  popupMessage.style.display = 'block';
+                  popupOverlay.style.display = 'block';
+              });
+  
+              // Attach the click event listener to the "Close" button
+              closePopup.addEventListener('click', function() {
+                  // Hide the popup message and overlay
+                  popupMessage.style.display = 'none';
+                  popupOverlay.style.display = 'none';
+              });
+  
+              // Attach the click event listener to the overlay to close the popup when clicking outside the message
+              popupOverlay.addEventListener('click', function() {
+                  // Hide the popup message and overlay
+                  popupMessage.style.display = 'none';
+                  popupOverlay.style.display = 'none';
+              });
+          });
+            </script>
             <!-- reviews -->
             <div class="col-12">
               <h3 class="description">Reviews</h3>
