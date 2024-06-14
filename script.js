@@ -16,7 +16,7 @@ const products = [
     {
         name: "Wooden Plane",
         imageSrc: "images/plane1.png",
-        description: "Soar through imaginative skies with this classic wooden airplane. Handcrafted from sustainable Baltic birch wood with a safe, natural harvest finish and a spinning propeller. <br> Age: Toddlers <br> Size: 3.5'H x 7'L x 7'W.",
+        description: "Soar through imaginative skies with this classic wooden airplane. Handcrafted from sustainable Baltic birch wood with a safe, natural harvest finish and a spinning propeller. Your children will love this toy! <br> Age: Toddlers <br> Size: 3.5'H x 7'L x 7'W.",
         price: "$19.99",
         onClickFunction: "plane()"
     },
@@ -37,7 +37,7 @@ const products = [
     {
         name: "Duck",
         imageSrc: "images/duck1.png",
-        description: "A charming and eco-friendly wooden duck toy, crafted from natural, non-toxic materials, perfect for sparking imaginative play and encouraging fine motor skills in young children.<br> Age: Toddlers <br> Size 20'H x 50'L x 10'W",
+        description: "A charming and eco-friendly wooden duck toy, crafted from natural wood and other non-toxic materials, perfect for sparking imaginative play and encouraging fine motor skills in young children. <br> Age: Toddlers <br> Size 20'H x 50'L x 10'W",
         price: "$19.99",
         onClickFunction: "duck()"
     }
