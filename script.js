@@ -42,54 +42,82 @@ const products = [
         onClickFunction: "duck()"
     }
 ];
+function goBack() {
+    window.location.href = "store.html"
+}
 
 function generateProductHTML(product) {
     return `
-        <div class="col">
-            <div class="card h-100" style="border:5px solid #c8e5e8">
+        <div class="col mb-4">
+            <div class="card h-100">
                 <img src="${product.imageSrc}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">${product.name}</h5>
                     <p class="card-text">${product.description}</p>
                     <h4 class="card-price">${product.price}</h4>
-                    <a onclick="${product.onClickFunction}" class="btn btn a1">Add to cart</a>
+                    <a onclick="${product.onClickFunction}"  class="btn btn a1">Add to cart</a>
                 </div>
             </div>
         </div>
     `;
 }
 
-function generateProducts() {
+function generateProducts(productsToShow) {
     const productContainer = document.getElementById("productContainer");
-    products.forEach(product => {
+    productContainer.innerHTML = ""; // Clear previous content
+
+    productsToShow.forEach(product => {
         productContainer.innerHTML += generateProductHTML(product);
     });
 }
 
-generateProducts();
+function filterProducts(searchText) {
+    const filteredProducts = products.filter(product => {
+        const name = product.name.toLowerCase();
+        return name.includes(searchText.toLowerCase());
+    });
 
-
-function goBack() {
-    window.location.href = "store.html"
+    generateProducts(filteredProducts);
 }
 
+function init() {
+    const searchInput = document.getElementById('searchInput');
+
+    searchInput.addEventListener('input', function() {
+        const searchText = this.value.trim();
+
+        if (searchText === '') {
+            generateProducts(products); // Show all products if search bar is empty
+        } else {
+            filterProducts(searchText); // Filter products based on search text
+        }
+    });
+
+    generateProducts(products); // Show all products initially
+}
+
+init();
 
 function blocks() {
-    window.location.href = "blocks.html"
-}
-function boat() {
-    window.location.href = "boat.html"
-}
-function car() {
-    window.location.href = "car.html"
-}
-function duck() {
-    window.location.href = "duck.html"
-}
-function train() {
-    window.location.href = "train.html"
-}
-function plane() {
-    window.location.href = "plane.html"
+    window.location.href = "blocks.html";
 }
 
+function boat() {
+    window.location.href = "boat.html";
+}
+
+function car() {
+    window.location.href = "car.html";
+}
+
+function duck() {
+    window.location.href = "duck.html";
+}
+
+function train() {
+    window.location.href = "train.html";
+}
+
+function plane() {
+    window.location.href = "plane.html";
+}
