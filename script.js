@@ -14,18 +14,18 @@ const products = [
         onClickFunction: "boat()"
     },
     {
-        name: "Wooden Car",
-        imageSrc: "images/car1.png",
-        description: "This heirloom-quality wooden car is a timeless treasure. Handcrafted from domestic and exotic hardwoods with a clear lacquer finish, this unique car will inspire generations of imaginative play. <br> Age: Toddlers <br> Size: 12' L x 5' H x 3.5' W",
-        price: "$19.99",
-        onClickFunction: "car()"
-    },
-    {
         name: "Wooden Plane",
         imageSrc: "images/plane1.png",
         description: "Soar through imaginative skies with this classic wooden airplane. Handcrafted from sustainable Baltic birch wood with a safe, natural harvest finish and a spinning propeller. <br> Age: Toddlers <br> Size: 3.5'H x 7'L x 7'W.",
         price: "$19.99",
         onClickFunction: "plane()"
+    },
+    {
+        name: "Wooden Car",
+        imageSrc: "images/car1.png",
+        description: "This heirloom-quality wooden car is a timeless treasure. Handcrafted from domestic and exotic hardwoods with a clear lacquer finish, this unique car will inspire generations of imaginative play. <br> Age: Toddlers <br> Size: 12' L x 5' H x 3.5' W",
+        price: "$19.99",
+        onClickFunction: "car()"
     },
     {
         name: "Train",
